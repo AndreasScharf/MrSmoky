@@ -11,11 +11,12 @@ body{
     height: 100%;
 }
 .login{
+    background: #fff8f0;
     height: 100%;
     margin: 0 1%;
     display: grid;
-    grid-gap: 10px;
-    grid-template-rows: 1fr 40pt 30pt 30pt 30pt 40pt 1fr;
+    grid-gap: 5pt;
+    grid-template-rows: 1fr 58pt 48pt 48pt 48pt 58pt 1fr;
     grid-template-areas:
     'placeholder'
     'nav_list'
@@ -37,35 +38,42 @@ body{
     flex-direction: row;
     margin: 0;
     padding: 0;
-    font-size: 30pt;
+    font-size: 48pt;
 }
 .login ul li{
     flex: 1 0 auto;
     list-style-type: none;
     text-align: center;
-    border-bottom: solid 2pt blue;
+    cursor: pointer;
 }
-.login input:nth-child(1){
-    grid-area: username;
-    font-size: 30pt;
+.activeloginNav {
+    border-bottom: solid 2pt #92140c;
+
 }
-.login input:nth-child(2){
-    grid-area: password;
-    font-size: 30pt;
+.login input{
+    background-color: #fff8f0;
+    font-size: 48pt;
+
 }
 .login input:nth-child(3){
+    grid-area: username;
+
+}
+.login input:nth-child(4){
+    grid-area: password;
+}
+.login input:nth-child(5){
     grid-area: password1;
-    font-size: 30pt;
 }
 .login button{
     grid-area: submitbtn;
-    border: solid 2pt blue;
-    background-color: white;
-    color: blue;
+    border: solid 2pt #92140c;
+    background-color: #fff8f0;
+    color: #92140c;
     font-size: 30pt;
     cursor: pointer;
 }
 .login button:hover{
-    background-color: blue;
-    color: white;
+    background-color: #92140c;
+    color: #fff8f0;
 }

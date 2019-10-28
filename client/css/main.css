@@ -1,0 +1,72 @@
+.main{
+    display: grid;
+    width: 100%;
+}
+.main .header{
+    height: 7vh;
+    width: 100%;
+    top:0;
+    left: 0;
+    background-color: #92140c;
+    transition: height 0.4s;
+    z-index: 10;
+    position: fixed;
+
+}
+.main .header.active{
+    height: 100vh;
+}
+.main .header ul{
+    display: none;
+    transition: display 0.4s;
+}
+.main .header.active ul{
+    display: block;
+    transition: display 0s;
+}
+.main .header .burger{
+    font-size: 7vh;
+
+    float: right;
+    width: 7vh;
+    height: 7vh;
+    margin-right: 1vh;
+}
+.main .header .burger div{
+    width: 100%;
+    background-color: white;
+    height: 1vh;
+    margin-top: 1vh;
+    transition: transform 0.4s;
+}
+.main .header .burger.active .bar1{
+     -webkit-transform: translate(0vh, 2vh) rotate(-45deg) ;
+     transform: translate(0vh, 2vh) rotate(-45deg) ;
+}
+.main .header .burger .bar2{
+    visibility: visible;
+}
+.main .header .burger.active .bar2{
+    visibility: hidden;
+
+}
+.main .header .burger.active .bar3{
+     -webkit-transform: translate(-0vh, -2vh) rotate(45deg);
+     transform: translate(-0vh, -2vh) rotate(45deg);
+}
+
+.add_Button{
+    background-image: url('images/Smoking shisha free icon 2.svg');
+    height: 20vw;
+    width: 20vw;
+    border: 1px black solid;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10vw;
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    color: white;
+    background-color: #92140c;
+}
