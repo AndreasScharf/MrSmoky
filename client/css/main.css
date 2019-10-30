@@ -19,6 +19,13 @@
 .main .header ul{
     display: none;
     transition: display 0.4s;
+    margin-top: 7vh;
+    font-size: 6vh;
+}
+.main .header ul li{
+    color: white;
+    list-style-type: none;
+    margin-bottom: 1vh;
 }
 .main .header.active ul{
     display: block;
@@ -54,7 +61,6 @@
      -webkit-transform: translate(-0vh, -2vh) rotate(45deg);
      transform: translate(-0vh, -2vh) rotate(45deg);
 }
-
 .add_Button{
     background-image: url('images/Smoking shisha free icon 2.svg');
     height: 20vw;
@@ -69,4 +75,21 @@
     right: 2vw;
     color: white;
     background-color: #92140c;
+}
+.home{
+    padding-top: 7vh;
+
+}
+.post{
+
+}
+.post p{
+    margin-bottom: 0;
+    border-bottom: 1pt solid #92140c;
+}
+.post p::before{
+    height: 50pt;
+    width: 50pt;
+    background-color: #92140c;
+    content: "";
 }
